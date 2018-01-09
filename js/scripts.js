@@ -1,24 +1,20 @@
 $(document).ready(function() {
 
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello</li>");
-    $("ul#page").prepend("<li>What do you want?</li");
-    $("ul#user").children("li").first().click(function() {
-      $(this).remove();
-    });
-    $("ul#page").children("li").first().click(function() {
-      $(this).remove();
-    });
+  $("button#bark").click(function() {
+    $("ul#dog").append("<li>Bark!</li>");
+    $("ul#cat").append("<li>Meow!</li");
   });
 
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Okay bye</li>");
-    $("ul#page").prepend("<li>Good riddance</li");
+  $("button#meow").click(function() {
+    $("ul#dog").prepend("<li>I love everything!</li>");
+    $("ul#cat").prepend("<li>I hate everyone!</li");
   });
 
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Why are you so mean?</li>");
-    $("ul#page").prepend("<li>I was programmed this way</li");
+  $("h3#dogsays").click(function() {
+    $("ul#dog").append("<img src='img/cat_meme.jpg'>");
+    $("ul#dog").children("img").click(function() {
+    $(this).remove()
+  });
   });
 
 });
